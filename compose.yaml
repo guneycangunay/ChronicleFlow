@@ -1,0 +1,17 @@
+services:
+  chronicleflow:
+    build: .
+    ports:
+      - "8080:8080"
+    volumes:
+      - chronicle-data:/var/lib/chronicle
+    read_only: true
+    tmpfs:
+      - /tmp
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+
+volumes:
+  chronicle-data:
