@@ -16,7 +16,7 @@
     "test:coverage": "node --import tsx --experimental-test-coverage --test-coverage-lines=90 --test-coverage-branches=75 --test-coverage-functions=80 --test test/**/*.test.ts"
   },
   "devDependencies": {
-    "@types/node": "^24.0.0",
+    "@types/node": "^26.6.4",
     "tsx": "^4.20.0",
     "typescript": "^5.9.0"
   }
